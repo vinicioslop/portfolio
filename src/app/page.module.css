@@ -1,0 +1,125 @@
+/*:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}*/
+
+.main {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+  --card-radius: 5px;
+
+  min-height: 100vh;
+
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 10vh;
+
+  background-color: var(--bg-cards);
+}
+
+.navbar h1 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.side_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 25vw;
+  min-height: fit-content;
+}
+
+.side_information .pic_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  width: 90%;
+  height: 250px;
+
+  border-radius: var(--card-radius);
+  background-color: var(--bg-cards);
+}
+
+.side_information .pic_card .pic_image_background {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 5%;
+
+  height: 120px;
+  width: 120px;
+
+  border-radius: 100%;
+  border: 3px solid green;
+  background-color: purple;
+}
+
+.side_information .pic_card .pic_image_background .pic_image {
+  color: white
+}
+
+.side_information .pic_card .pic_name {
+  font-size: 20px;
+}
+
+.side_information .pic_card .pic_role {
+  margin-top: 2%;
+
+  font-size: 14px;
+}
+
+.side_information .my_information {
+  width: 90%;
+  padding: 12px 0;
+
+  border-radius: var(--card-radius);
+  background-color: var(--bg-cards);
+}
+
+.side_information .my_information .information_list {
+  display: flex;
+  flex-direction: column;
+
+  height: 200px;
+  max-width: 95%;
+  justify-content: space-evenly;
+
+  padding-left: 30px;
+
+  list-style-type: none;
+}
+
+.side_information .my_information .information_list .information_list_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.side_information .my_information .information_list .information_list_item .icon {
+  margin-right: 20px;
+}
+
+.side_information .my_information .information_list .information_list_item p {
+  font-size: 14px;
+}
