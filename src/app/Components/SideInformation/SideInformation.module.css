@@ -1,0 +1,137 @@
+.side_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 25vw;
+    min-height: fit-content;
+}
+
+.side_information .pic_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    width: 90%;
+    height: 250px;
+
+    border-radius: var(--card-radius);
+    background-color: var(--bg-cards);
+}
+
+.side_information .pic_card .pic_image_background {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 5%;
+
+    height: 120px;
+    width: 120px;
+}
+
+.side_information .pic_card .pic_image_background .pic_author {
+    border-radius: 100%;
+    border: 3px solid rgb(81, 0, 128);
+}
+
+.side_information .pic_card .pic_name {
+    font-size: 20px;
+}
+
+.side_information .pic_card .pic_role {
+    margin-top: 2%;
+
+    font-size: 14px;
+}
+
+.side_information .my_information {
+    margin-bottom: 5%;
+
+    width: 90%;
+    padding: 12px 0;
+
+    border-radius: var(--card-radius);
+    background-color: var(--bg-cards);
+}
+
+.side_information .my_information .information_list {
+    display: flex;
+    flex-direction: column;
+
+    height: 200px;
+    max-width: 95%;
+    justify-content: space-evenly;
+
+    padding-left: 30px;
+
+    list-style-type: none;
+}
+
+.side_information .my_information .information_list .information_list_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.side_information .my_information .information_list .information_list_item .icon {
+    margin-right: 20px;
+}
+
+.side_information .my_information .information_list .information_list_item p {
+    font-size: 12px;
+}
+
+.side_information .technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: fit-content;
+    width: 90%;
+
+    padding-bottom: 20px;
+
+    border-radius: var(--card-radius);
+    background-color: var(--bg-cards);
+}
+
+.side_information .technologies .title {
+    justify-self: left;
+
+    margin-top: 20px;
+    margin-left: 40px;
+
+    width: 100%;
+
+    font-size: 20px;
+}
+
+
+.side_information .technologies .list_technologies {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+
+    width: 90%;
+}
+
+.side_information .technologies .list_technologies .list_technologies_item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    padding: 10px 10px;
+
+    font-size: 12px;
+    color: var(--bg-cards);
+
+    border-radius: 20px;
+    background-color: var(--bg-techs);
+}
