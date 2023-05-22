@@ -1,4 +1,4 @@
-import SideInformationStyle from './sideinformation.css';
+import SideInformationStyle from './sideinformation.module.css';
 
 // componente do next js para lidar com imagens
 import Image from 'next/image';
