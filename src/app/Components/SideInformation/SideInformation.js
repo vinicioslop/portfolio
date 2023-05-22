@@ -1,4 +1,4 @@
-import SideInformationStyle from './sideinformation.module.css';
+import SideInformationStyle from './sideinformation.css';
 
 // componente do next js para lidar com imagens
 import Image from 'next/image';
@@ -96,7 +96,7 @@ export default function SideInformation() {
                 </ul>
             </div>
             <div className={SideInformationStyle.technologies}>
-                <h2 className={SideInformationStyle.title}>
+                <h2 className={SideInformationStyle.section_title}>
                     Tecnologias
                 </h2>
                 <div className={SideInformationStyle.list_technologies}>
@@ -112,6 +112,21 @@ export default function SideInformation() {
                     <span className={SideInformationStyle.list_technologies_item}>SQlite</span>
                 </div>
             </div>
+            <div className={SideInformationStyle.experience}>
+                <h2 className={SideInformationStyle.section_title}>Experiência</h2>
+                <ul className={SideInformationStyle.experience_list}>
+                    <li className={SideInformationStyle.experience_list_item}>
+                        Experiência 1
+                    </li>
+                    <li className={SideInformationStyle.experience_list_item}>
+                        Experiência 2
+                    </li>
+                    <li className={SideInformationStyle.experience_list_item}>
+                        Experiência 3
+                    </li>
+                </ul>
+            </div>
+            <div></div>
         </div>
     )
 }

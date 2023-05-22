@@ -8,6 +8,17 @@
     min-height: fit-content;
 }
 
+.side_information .section_title {
+    justify-self: left;
+
+    margin-top: 20px;
+    margin-left: 40px;
+
+    width: 100%;
+
+    font-size: 20px;
+}
+
 .side_information .pic_card {
     display: flex;
     flex-direction: column;
@@ -93,6 +104,8 @@
     flex-direction: column;
     align-items: center;
 
+    margin-bottom: 5%;
+
     min-height: fit-content;
     width: 90%;
 
@@ -100,17 +113,6 @@
 
     border-radius: var(--card-radius);
     background-color: var(--bg-cards);
-}
-
-.side_information .technologies .title {
-    justify-self: left;
-
-    margin-top: 20px;
-    margin-left: 40px;
-
-    width: 100%;
-
-    font-size: 20px;
 }
 
 
@@ -134,4 +136,17 @@
 
     border-radius: 20px;
     background-color: var(--bg-techs);
+}
+
+.side_information .experience {
+    display: flex;
+    flex-direction: column;
+
+    min-height: fit-content;
+    width: 90%;
+
+    padding-bottom: 20px;
+
+    border-radius: var(--card-radius);
+    background-color: var(--bg-cards);
 }
