@@ -112,21 +112,40 @@ export default function SideInformation() {
                     <span className={SideInformationStyle.list_technologies_item}>SQlite</span>
                 </div>
             </div>
-            <div className={SideInformationStyle.experience}>
-                <h2 className={SideInformationStyle.section_title}>Experiência</h2>
+            <div className={SideInformationStyle.experience_education}>
+                <h2 className={SideInformationStyle.section_title}>
+                    Experiência
+                </h2>
                 <ul className={SideInformationStyle.experience_list}>
-                    <li className={SideInformationStyle.experience_list_item}>
-                        Experiência 1
+                    <li className={SideInformationStyle.experience_education_list_item}>
+                        <p className={SideInformationStyle.title}>ETEC Adolpho Berezin</p>
+                        <p className={SideInformationStyle.time}>2021 - 2022</p>
+                        <p className={SideInformationStyle.description}>Desenvolvedor Fullstack</p>
                     </li>
-                    <li className={SideInformationStyle.experience_list_item}>
-                        Experiência 2
-                    </li>
-                    <li className={SideInformationStyle.experience_list_item}>
-                        Experiência 3
+                    <li className={SideInformationStyle.experience_education_list_item}>
+                        <p className={SideInformationStyle.title}>Quest Info</p>
+                        <p className={SideInformationStyle.time}>2018 - 2018</p>
+                        <p className={SideInformationStyle.description}>Estagiário</p>
                     </li>
                 </ul>
             </div>
-            <div></div>
+            <div className={SideInformationStyle.experience_education}>
+                <h2 className={SideInformationStyle.section_title}>
+                    Formação Acadêmica
+                </h2>
+                <ul className={SideInformationStyle.education_list}>
+                    <li className={SideInformationStyle.experience_education_list_item}>
+                        <p className={SideInformationStyle.title}>Faculdade de Tecnologia de Praia Grande</p>
+                        <p className={SideInformationStyle.time}>2017 - 2019</p>
+                        <p className={SideInformationStyle.description}>Analise e Desenvolvimento de Sistemas</p>
+                    </li>
+                    <li className={SideInformationStyle.experience_education_list_item}>
+                        <p className={SideInformationStyle.title}>ETEC Adolpho Berezin</p>
+                        <p className={SideInformationStyle.time}>2021 - 2022</p>
+                        <p className={SideInformationStyle.description}>Técnico em Informática</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }

@@ -9,12 +9,13 @@
 }
 
 .side_information .section_title {
-    justify-self: left;
+    text-align: left;
 
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 
-    width: 100%;
+    width: 90%;
 
     font-size: 20px;
 }
@@ -120,8 +121,6 @@
     display: flex;
     flex-wrap: wrap;
 
-    margin-top: 20px;
-
     width: 90%;
 }
 
@@ -138,15 +137,58 @@
     background-color: var(--bg-techs);
 }
 
-.side_information .experience {
+.side_information .experience_education {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 5%;
 
     min-height: fit-content;
     width: 90%;
 
-    padding-bottom: 20px;
-
     border-radius: var(--card-radius);
     background-color: var(--bg-cards);
+}
+
+.side_information .experience_education .education_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    height: fit-content;
+    width: 85%;
+
+    padding-left: 60px;
+    padding-right: 10px;
+}
+
+.side_information .experience_education .experience_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    height: fit-content;
+    width: 90%;
+
+    padding-left: 90px;
+}
+
+.side_information .experience_education .experience_education_list_item {
+    margin-bottom: 20px;
+}
+
+.side_information .experience_education .experience_education_list_item .title {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.side_information .experience_education .experience_education_list_item .time {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.side_information .experience_education .experience_education_list_item .description {
+    font-size: 14px;
+    font-weight: 500;
 }
