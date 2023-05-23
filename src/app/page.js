@@ -1,13 +1,13 @@
 import styles from './page.module.css';
 
-import SideInformation from './Components/SideInformation/SideInformation';
 import NavBar from './Components/NavBar/NavBar';
+import MainContent from './Components/MainContent/MainContent';
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <NavBar />
-      <SideInformation />
+      <MainContent />
     </main>
   )
 }

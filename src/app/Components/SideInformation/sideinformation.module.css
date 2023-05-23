@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 25vw;
+    width: 25%;
     min-height: fit-content;
 }
 
@@ -26,7 +26,6 @@
     align-items: center;
     justify-content: center;
 
-    margin-top: 5%;
     margin-bottom: 5%;
 
     width: 90%;
