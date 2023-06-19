@@ -1,13 +1,13 @@
 import styles from './maincontent.module.css';
 
-import SideInformation from '../SideInformation/SideInformation';
-import PrincipalContent from '../PrincipalContent/PrincipalContent';
+import Home from '../Home/Home.js';
+import Projetos from '../Projetos/Projetos';
 
 export default function MainContent() {
     return (
         <div className={styles.main_content_body}>
-            <SideInformation />
-            <PrincipalContent />
+            <Home />
+            <Projetos />
         </div>
     )
 }
