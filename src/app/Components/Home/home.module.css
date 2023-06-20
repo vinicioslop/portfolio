@@ -1,12 +1,13 @@
 .home_container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
 
     padding-left: 5%;
     padding-right: 5%;
-
-    width: 100%;
 }
 
 .home_container .briefing {
@@ -47,4 +48,38 @@
     border: 2px solid var(--primary-color);
     outline: none;
     background-color: transparent;
+}
+
+.home_container .working_on {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: fit-content;
+    width: 400px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+    border: 1px solid var(--primary-color);
+}
+
+.home_container .working_on .working_color {
+    margin-right: 5px;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: var(--primary-color);
+}
+
+.home_container .working_on .working_description {
+    font-size: 12px;
+    color: rgba(255, 255, 255, .7);
+}
+
+.home_container .working_on .working_description .working_enfasis {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
 }

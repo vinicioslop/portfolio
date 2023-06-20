@@ -14,6 +14,12 @@ export default function Home() {
                     <button className={homeStyle.contact_button}>Me contate !!</button>
                 </Link>
             </div>
+            <div className={homeStyle.working_on}>
+                <div className={homeStyle.working_color}></div>
+                <p className={homeStyle.working_description}>
+                    Atualmente trabalhando no <span className={homeStyle.working_enfasis}>Portfólio</span>
+                </p>
+            </div>
         </div>
     )
 }
