@@ -23,10 +23,12 @@
   display: flex;
   justify-content: space-between;
 
-  width: 500px;
+  width: 60%;
 }
 
 .navbar .links .link {
+  padding: 10px;
+
   color: var(--text-color);
   text-decoration: none;
 

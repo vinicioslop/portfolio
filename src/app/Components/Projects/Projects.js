@@ -25,13 +25,43 @@ export default function Projects() {
                     <div className={projectsStyle.project_image}>
                         IMAGEM
                     </div>
-                    <hr/>
+                    <hr />
                     <div className={projectsStyle.project_technologies}>
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                     </div>
-                    <hr/>
+                    <hr />
+                    <div className={projectsStyle.project_description}>
+                        Descrição
+                    </div>
+                </div>
+                <div className={projectsStyle.project_item}>
+                    <div className={projectsStyle.project_image}>
+                        IMAGEM
+                    </div>
+                    <hr />
+                    <div className={projectsStyle.project_technologies}>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <hr />
+                    <div className={projectsStyle.project_description}>
+                        Descrição
+                    </div>
+                </div>
+                <div className={projectsStyle.project_item}>
+                    <div className={projectsStyle.project_image}>
+                        IMAGEM
+                    </div>
+                    <hr />
+                    <div className={projectsStyle.project_technologies}>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <hr />
                     <div className={projectsStyle.project_description}>
                         Descrição
                     </div>
