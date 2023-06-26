@@ -1,5 +1,7 @@
 import projectsStyle from './projects.module.css';
 
+import ProjectCard from '../ProjectCard/ProjectCard';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -9,6 +11,25 @@ import buygeHomeImage from '../../../images/projetos/tcc_front/buyge_home.png';
 import socialTreeImage from '../../../images/projetos/social_tree/social_tree_image.png';
 
 export default function Projects() {
+    const projects = [
+        {
+            imageCover: buygeHomeImage,
+            technologies: ['HTML', 'CSS', 'JavaScript'],
+            title: 'Buyge Frontend',
+            information: 'Marketplace de venda de produtos do segmento Geek.',
+            github: '/',
+            live: '/'
+        },
+        {
+            imageCover: socialTreeImage,
+            technologies: ['Next.js', 'ReactJs', 'HTML', 'CSS', 'JavaScript'],
+            title: 'Social Tree',
+            information: 'Projeto inspitado no Linktree, aplicação onde é possível divulgar links de acesso a redes sociais e contato pessoal.',
+            github: '/',
+            live: 'https://social.vinicioslop.com.br/'
+        }
+    ];
+
     return (
         <div className={projectsStyle.projects_container}>
             <div className={projectsStyle.title_container}>
@@ -23,51 +44,9 @@ export default function Projects() {
                     <Image src={arrowRightIcon} height={20} width={20} />
                 </Link>
             </div>
+            
             <div className={projectsStyle.project_group}>
-                
-                <div className={projectsStyle.project_item}>
-                    <div className={projectsStyle.project_image_container}>
-                        <Image className={projectsStyle.project_image} src={buygeHomeImage} />
-                    </div>
-                    <hr />
-                    <div className={projectsStyle.project_technologies}>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <hr />
-                    <div className={projectsStyle.project_description}>
-                        <h3 className={projectsStyle.project_title}>Buyge Frontend</h3>
-                        <p className={projectsStyle.project_information}>Marketplace de venda de produtos do segmento Geek.</p>
-                        <div className={projectsStyle.button_group}>
-                            <button>GitHub</button>
-                            <button>Online</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={projectsStyle.project_item}>
-                    <div className={projectsStyle.project_image_container}>
-                        <Image className={projectsStyle.project_image} src={socialTreeImage} />
-                    </div>
-                    <hr />
-                    <div className={projectsStyle.project_technologies}>
-                        <span>Next.js</span>
-                        <span>ReactJs</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <hr />
-                    <div className={projectsStyle.project_description}>
-                        <h3 className={projectsStyle.project_title}>Social Tree</h3>
-                        <p className={projectsStyle.project_information}>Projeto inspitado no Linktree, aplicação onde é possível divulgar links de acesso a redes sociais e contato pessoal.</p>
-                        <div className={projectsStyle.button_group}>
-                            <button>GitHub</button>
-                            <button>Online</button>
-                        </div>
-                    </div>
-                </div>
+                {projects.map((project) => <ProjectCard data={project} />)}
             </div>
         </div>
     )
