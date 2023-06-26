@@ -3,7 +3,14 @@ import projectCardStyle from './projectcard.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function ProjectCard( { data } ) {
+export default function ProjectCard({ data }) {
+    const liveLink = data.live != '' ?
+        <Link href={data.live} target='_blank'>
+            <button>Online</button>
+        </Link>
+        :
+        <button>Online</button>;
+
     return (
         <div className={projectCardStyle.project_card}>
             <div className={projectCardStyle.project_image_container}>
@@ -15,11 +22,18 @@ export default function ProjectCard( { data } ) {
             </div>
             <hr />
             <div className={projectCardStyle.project_description}>
-                <h3 className={projectCardStyle.project_title}>{data.title}</h3>
-                <p className={projectCardStyle.project_information}>{data.information}</p>
+                <h3 className={projectCardStyle.project_title}>
+                    {data.title}
+                </h3>
+                <p className={projectCardStyle.project_information}>
+                    {data.information}
+                </p>
+
                 <div className={projectCardStyle.button_group}>
-                    <button>GitHub</button>
-                    <button>Online</button>
+                    <Link href={data.github} target='_blank'>
+                        <button>GitHub</button>
+                    </Link>
+                    {liveLink}
                 </div>
             </div>
         </div>

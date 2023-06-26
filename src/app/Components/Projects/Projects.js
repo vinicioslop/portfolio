@@ -17,16 +17,16 @@ export default function Projects() {
             technologies: ['HTML', 'CSS', 'JavaScript'],
             title: 'Buyge Frontend',
             information: 'Marketplace de venda de produtos do segmento Geek.',
-            github: '/',
-            live: '/'
+            github: 'https://github.com/vinicioslop/buyge-frontend',
+            live: ''
         },
         {
             imageCover: socialTreeImage,
             technologies: ['Next.js', 'ReactJs', 'HTML', 'CSS', 'JavaScript'],
             title: 'Social Tree',
             information: 'Projeto inspitado no Linktree, aplicação onde é possível divulgar links de acesso a redes sociais e contato pessoal.',
-            github: '/',
-            live: 'https://social.vinicioslop.com.br/'
+            github: 'https://github.com/vinicioslop/social-tree',
+            live: 'https://social.vinicioslop.com.br'
         }
     ];
 
@@ -44,7 +44,7 @@ export default function Projects() {
                     <Image src={arrowRightIcon} height={20} width={20} />
                 </Link>
             </div>
-            
+
             <div className={projectsStyle.project_group}>
                 {projects.map((project) => <ProjectCard data={project} />)}
             </div>

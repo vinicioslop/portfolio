@@ -92,4 +92,12 @@
     background-color: transparent;
     outline: none;
     border: 2px solid var(--primary-color);
+
+    cursor: pointer;
+
+    transition: filter 0.4s;
+}
+
+.project_card .project_description .button_group button:hover {
+    filter: brightness(0.7);
 }
