@@ -3,7 +3,7 @@ import './globals.css'
 import { Merriweather_Sans } from 'next/font/google'
 
 const merriweather_Sans = Merriweather_Sans({
-  weight: ['400', '500', '700'],
+  weight: ['300', '400', '500', '700'],
   subsets: ['latin'],
   display: 'swap',
 });

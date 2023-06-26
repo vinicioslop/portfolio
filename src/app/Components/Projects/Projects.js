@@ -5,6 +5,9 @@ import Image from 'next/image';
 
 import arrowRightIcon from '../../../icons/arrow-right.svg';
 
+import buygeHomeImage from '../../../images/projetos/tcc_front/buyge_home.png';
+import socialTreeImage from '../../../images/projetos/social_tree/social_tree_image.png';
+
 export default function Projects() {
     return (
         <div className={projectsStyle.projects_container}>
@@ -21,9 +24,10 @@ export default function Projects() {
                 </Link>
             </div>
             <div className={projectsStyle.project_group}>
+                
                 <div className={projectsStyle.project_item}>
-                    <div className={projectsStyle.project_image}>
-                        IMAGEM
+                    <div className={projectsStyle.project_image_container}>
+                        <Image className={projectsStyle.project_image} src={buygeHomeImage} />
                     </div>
                     <hr />
                     <div className={projectsStyle.project_technologies}>
@@ -33,37 +37,35 @@ export default function Projects() {
                     </div>
                     <hr />
                     <div className={projectsStyle.project_description}>
-                        Descrição
+                        <h3 className={projectsStyle.project_title}>Buyge Frontend</h3>
+                        <p className={projectsStyle.project_information}>Marketplace de venda de produtos do segmento Geek.</p>
+                        <div className={projectsStyle.button_group}>
+                            <button>GitHub</button>
+                            <button>Online</button>
+                        </div>
                     </div>
                 </div>
+
                 <div className={projectsStyle.project_item}>
-                    <div className={projectsStyle.project_image}>
-                        IMAGEM
+                    <div className={projectsStyle.project_image_container}>
+                        <Image className={projectsStyle.project_image} src={socialTreeImage} />
                     </div>
                     <hr />
                     <div className={projectsStyle.project_technologies}>
+                        <span>Next.js</span>
+                        <span>ReactJs</span>
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                     </div>
                     <hr />
                     <div className={projectsStyle.project_description}>
-                        Descrição
-                    </div>
-                </div>
-                <div className={projectsStyle.project_item}>
-                    <div className={projectsStyle.project_image}>
-                        IMAGEM
-                    </div>
-                    <hr />
-                    <div className={projectsStyle.project_technologies}>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <hr />
-                    <div className={projectsStyle.project_description}>
-                        Descrição
+                        <h3 className={projectsStyle.project_title}>Social Tree</h3>
+                        <p className={projectsStyle.project_information}>Projeto inspitado no Linktree, aplicação onde é possível divulgar links de acesso a redes sociais e contato pessoal.</p>
+                        <div className={projectsStyle.button_group}>
+                            <button>GitHub</button>
+                            <button>Online</button>
+                        </div>
                     </div>
                 </div>
             </div>

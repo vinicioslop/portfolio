@@ -1,8 +1,8 @@
 import homeStyle from './home.module.css';
 
-import Briefing from '../Briefing/Briefing';
-import Services from '../Services/Services';
-import Projects from '../Projects/Projects';
+import Briefing from '../../Components/Briefing/Briefing';
+import Services from '../../Components/Services/Services';
+import Projects from '../../Components/Projects/Projects';
 
 export default function Home() {
     return (

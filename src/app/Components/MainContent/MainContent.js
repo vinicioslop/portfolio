@@ -1,6 +1,6 @@
 import styles from './maincontent.module.css';
 
-import Home from '../Home/Home.js';
+import Home from '../../pages/Home/Home';
 
 export default function MainContent() {
     return (
