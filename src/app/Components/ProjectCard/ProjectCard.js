@@ -14,11 +14,13 @@ export default function ProjectCard({ data }) {
     return (
         <div className={projectCardStyle.project_card}>
             <div className={projectCardStyle.project_image_container}>
-                <Image className={projectCardStyle.project_image} src={data.imageCover} alt={data.imageAlt}/>
+                <Image className={projectCardStyle.project_image} src={data.imageCover} alt={data.imageAlt} />
             </div>
             <hr />
             <div className={projectCardStyle.project_technologies}>
-                {data.technologies.map((technology) => <span>{technology}</span>)}
+                {data.technologies.map((technology, index) =>
+                    <span key={data.title + index}>{technology}</span>
+                )}
             </div>
             <hr />
             <div className={projectCardStyle.project_description}>
