@@ -14,7 +14,7 @@ export default function ProjectCard({ data }) {
     return (
         <div className={projectCardStyle.project_card}>
             <div className={projectCardStyle.project_image_container}>
-                <Image className={projectCardStyle.project_image} src={data.imageCover} />
+                <Image className={projectCardStyle.project_image} src={data.imageCover} alt={data.imageAlt}/>
             </div>
             <hr />
             <div className={projectCardStyle.project_technologies}>

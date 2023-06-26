@@ -14,6 +14,7 @@ export default function Projects() {
     const projects = [
         {
             imageCover: buygeHomeImage,
+            imageAlt: 'Exemplo de tela inicial do projeto Buyge',
             technologies: ['HTML', 'CSS', 'JavaScript'],
             title: 'Buyge Frontend',
             information: 'Marketplace de venda de produtos do segmento Geek.',
@@ -22,6 +23,7 @@ export default function Projects() {
         },
         {
             imageCover: socialTreeImage,
+            imageAlt: 'Exemplo de tela inicial do projeto Social Tree',
             technologies: ['Next.js', 'ReactJs', 'HTML', 'CSS', 'JavaScript'],
             title: 'Social Tree',
             information: 'Projeto inspitado no Linktree, aplicação onde é possível divulgar links de acesso a redes sociais e contato pessoal.',
@@ -41,12 +43,12 @@ export default function Projects() {
                 </div>
                 <Link className={projectsStyle.link} href='/'>
                     <span className={projectsStyle.content}>Veja todos</span>
-                    <Image src={arrowRightIcon} height={20} width={20} />
+                    <Image src={arrowRightIcon} height={20} width={20} alt='ícone de seta para direita' />
                 </Link>
             </div>
 
             <div className={projectsStyle.project_group}>
-                {projects.map((project) => <ProjectCard data={project} />)}
+                {projects.map((project) => <ProjectCard data={project} key={project.github} />)}
             </div>
         </div>
     )

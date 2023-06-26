@@ -17,7 +17,7 @@ export default function Services() {
                 </div>
                 <Link className={servicesStyle.link} href='/'>
                     <span className={servicesStyle.content}>Veja todos</span>
-                    <Image src={arrowRightIcon} height={20} width={20} />
+                    <Image src={arrowRightIcon} height={20} width={20} alt='ícone de seta para direita'/>
                 </Link>
             </div>
             <div className={servicesStyle.services_group}>
