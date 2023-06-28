@@ -19,7 +19,7 @@ export default function ProjectCard({ data }) {
             <hr />
             <div className={projectCardStyle.project_technologies}>
                 {data.technologies.map((technology, index) =>
-                    <span key={data.title + index}>{technology}</span>
+                    <span key={data.projectId + 'Tec' + index}>{technology}</span>
                 )}
             </div>
             <hr />

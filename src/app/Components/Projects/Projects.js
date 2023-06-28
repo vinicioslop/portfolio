@@ -13,6 +13,7 @@ import socialTreeImage from '../../../images/projetos/social_tree/social_tree_im
 export default function Projects() {
     const projects = [
         {
+            projectId: 'buygeFront',
             imageCover: buygeHomeImage,
             imageAlt: 'Exemplo de tela inicial do projeto Buyge',
             technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -22,6 +23,7 @@ export default function Projects() {
             live: ''
         },
         {
+            projectId: 'socialTree',
             imageCover: socialTreeImage,
             imageAlt: 'Exemplo de tela inicial do projeto Social Tree',
             technologies: ['Next.js', 'ReactJs', 'HTML', 'CSS', 'JavaScript'],
@@ -48,7 +50,7 @@ export default function Projects() {
             </div>
 
             <div className={projectsStyle.project_group}>
-                {projects.map((project) => <ProjectCard data={project} key={project.github} />)}
+                {projects.map((project) => <ProjectCard data={project} key={project.projectId} />)}
             </div>
         </div>
     )
