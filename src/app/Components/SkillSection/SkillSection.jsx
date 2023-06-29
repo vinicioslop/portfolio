@@ -1,0 +1,13 @@
+import style from './style.module.css';
+
+export default function Skills({ data }) {
+    return (
+        <div className={style.container}>
+            <div className={style.title}>{data.title}</div>
+            <hr />
+            <ul className={style.items}>
+                {data.skills.map(skill => <li className={style.item}>{skill}</li>)}
+            </ul>
+        </div>
+    )
+}

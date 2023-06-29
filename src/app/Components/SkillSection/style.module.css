@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+    width: 200px;
+
+    border: 2px solid var(--primary-color)
+}
+
+.container .title {
+    padding: 10px;
+
+    width: 100%;
+}
+
+.container hr {
+    border: 1px solid var(--primary-color);
+}
+
+.container .items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: 5px;
+
+    padding: 10px;
+
+    list-style: none;
+}
+
+.container .items .item {
+    margin-right: 5px;
+
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.85;
+}
