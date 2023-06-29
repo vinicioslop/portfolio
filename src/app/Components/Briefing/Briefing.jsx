@@ -1,6 +1,9 @@
 import briefingStyle from './briefing.module.css';
 
 import Link from 'next/link';
+import Image from 'next/image';
+
+import portfolioImage from '../../../images/projetos/portfolio/portfolio_home.png';
 
 export default function Home() {
     return (
@@ -14,10 +17,17 @@ export default function Home() {
                     <button className={briefingStyle.contact_button}>Me contate !!</button>
                 </Link>
             </div>
+            
             <div className={briefingStyle.working_on}>
-                {/* REVISAR CAIXA DE MENSAGEM E COLOCAR ACIMA UMA IMAGEM DO PROJETO DESENVOLVIDO NO MOMENTO */}
-                <div className={briefingStyle.working_color}></div>
+                <div className={briefingStyle.working_image_background}>
+                    <Image
+                        className={briefingStyle.working_image}
+                        src={portfolioImage}
+                        alt='Imagem de exemplo do Projeto do Portfolio'
+                    />
+                </div>
                 <p className={briefingStyle.working_description}>
+                    <span className={briefingStyle.working_color}></span>
                     Atualmente trabalhando no <span className={briefingStyle.working_enfasis}>Portfólio</span>
                 </p>
             </div>
