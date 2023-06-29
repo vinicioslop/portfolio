@@ -24,6 +24,7 @@ export default function Home() {
                         className={briefingStyle.working_image}
                         src={portfolioImage}
                         alt='Imagem de exemplo do Projeto do Portfolio'
+                        priority
                     />
                 </div>
                 <p className={briefingStyle.working_description}>
