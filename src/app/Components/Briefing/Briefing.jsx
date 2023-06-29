@@ -17,7 +17,7 @@ export default function Home() {
                     <button className={briefingStyle.contact_button}>Me contate !!</button>
                 </Link>
             </div>
-            
+
             <div className={briefingStyle.working_on}>
                 <div className={briefingStyle.working_image_background}>
                     <Image

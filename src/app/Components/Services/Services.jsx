@@ -1,17 +1,18 @@
 import servicesStyle from './services.module.css';
 
+import Title from '../Title/Title';
 import ServiceCard from '../ServiceCard/ServiceCard';
-
-import Link from 'next/link';
-import Image from 'next/image';
-
-import arrowRightIcon from '../../../icons/arrow-right.svg';
 
 import hardwareManutentionImage from '../../../images/servicos/hardware_manutention.jpg';
 import systemUpgradeImage from '../../../images/servicos/system_upgrade.jpg';
 import webDevelopmentImage from '../../../images/servicos/web_development.jpg';
 
 export default function Services() {
+    const titleData = {
+        title: "services",
+        link: "/"
+    }
+
     const services = [
         {
             serviceId: 'hardwareManutention',
@@ -38,22 +39,10 @@ export default function Services() {
 
     return (
         <div className={servicesStyle.services_container}>
-            <div className={servicesStyle.title_container}>
-                <h2 className={servicesStyle.title}>
-                    <span>#</span>servicos
-                </h2>
-                <div className={servicesStyle.line_container}>
-                    <hr />
-                </div>
-                <Link className={servicesStyle.link} href='/'>
-                    <span className={servicesStyle.content}>Veja todos</span>
-                    <Image src={arrowRightIcon} height={20} width={20} alt='ícone de seta para direita' />
-                </Link>
-            </div>
+            <Title titleData={titleData} />
+
             <div className={servicesStyle.services_group}>
-
                 {services.map(service => <ServiceCard key={service.serviceId} serviceInformation={service} />)}
-
             </div>
         </div>
     )
