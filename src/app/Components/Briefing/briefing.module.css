@@ -45,6 +45,38 @@
     border: 2px solid var(--primary-color);
     outline: none;
     background-color: transparent;
+
+    animation-name: contactButtonMouseOut;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contactButtonMouseOut {
+    from {
+        border-color: var(--primary-color2);
+    }
+
+    to {
+        border-color: var(--primary-color);
+    }
+}
+
+.briefing_container .briefing .contact_button:hover {
+    cursor: pointer;
+
+    animation-name: contactButtonMouseOver;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contactButtonMouseOver {
+    from {
+        border-color: var(--primary-color);
+    }
+
+    to {
+        border-color: var(--primary-color2);
+    }
 }
 
 .briefing_container .working_on {
