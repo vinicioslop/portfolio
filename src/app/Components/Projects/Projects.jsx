@@ -13,7 +13,7 @@ import socialTreeImage from '../../../images/projetos/social_tree/social_tree_im
 
 export default function Projects() {
     const titleData = {
-        title: "projetos",
+        title: "Projetos",
         link: "/"
     }
 

@@ -17,6 +17,8 @@
   font-size: 24px;
   font-weight: 500;
   color: var(--text-color);
+
+  transition: 0.3s;
 }
 
 .navbar .logo h1:hover {
@@ -42,6 +44,29 @@
 
   text-decoration: none;
   color: var(--text-color);
+
+  animation-name: linkNotSelected;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes linkNotSelected {
+  from {
+    top: 5px;
+    left: 5px;
+
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.25);
+
+    box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  to {
+    top: 0px;
+    left: 0px;
+  }
 }
 
 .navbar .links .link:hover {

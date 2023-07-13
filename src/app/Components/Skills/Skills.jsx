@@ -5,7 +5,7 @@ import SkillSection from "../SkillSection/SkillSection";
 
 export default function Skills() {
     const titleData = {
-        title: "skills",
+        title: "Skills",
         link: "/"
     }
 

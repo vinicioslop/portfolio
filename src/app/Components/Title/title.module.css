@@ -12,10 +12,6 @@
     font-size: 22px;
 }
 
-.title_container .title span {
-    color: var(--primary-color);
-}
-
 .title_container .line_container {
     width: 80%;
 }
@@ -29,9 +25,41 @@
     flex-direction: row;
     align-items: center;
 
+    position: relative;
+
     font-size: 14px;
     color: var(--text-color);
     text-decoration: none;
+
+    animation-name: linkMouseOut;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes linkMouseOut {
+    from {
+        left: 5px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+.title_container .link:hover {
+    animation-name: linkMouseHoverEffect;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes linkMouseHoverEffect {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 5px;
+    }
 }
 
 .title_container .link span {

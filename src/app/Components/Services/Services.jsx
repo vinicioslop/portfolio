@@ -9,7 +9,7 @@ import webDevelopmentImage from '../../../images/servicos/web_development.jpg';
 
 export default function Services() {
     const titleData = {
-        title: "services",
+        title: "Serviços",
         link: "/"
     }
 
