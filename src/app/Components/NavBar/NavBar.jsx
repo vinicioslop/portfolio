@@ -4,26 +4,26 @@ import navbarStyle from './navbar.module.css';
 export default function NavBar() {
     return (
         <div className={navbarStyle.navbar}>
-            <div className={navbarStyle.logo}>
+            <Link className={navbarStyle.logo} href="/">
                 <h1>
-                    <span>#</span>vinicioslop
+                    vinicioslop
                 </h1>
-            </div>
+            </Link>
             <div className={navbarStyle.links}>
                 <Link className={navbarStyle.link} href="/">
-                    <p><span>#</span>home</p>
+                    <p>Home</p>
                 </Link>
                 <Link className={navbarStyle.link} href="/">
-                    <p><span>#</span>servicos</p>
+                    <p>Serviços</p>
                 </Link>
                 <Link className={navbarStyle.link} href="/">
-                    <p><span>#</span>projetos</p>
+                    <p>Projetos</p>
                 </Link>
                 <Link className={navbarStyle.link} href="/">
-                    <p><span>#</span>sobre-mim</p>
+                    <p>Sobre Mim</p>
                 </Link>
                 <Link className={navbarStyle.link} href="/">
-                    <p><span>#</span>contato</p>
+                    <p>Contato</p>
                 </Link>
             </div>
         </div>

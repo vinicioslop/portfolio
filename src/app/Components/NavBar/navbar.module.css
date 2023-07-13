@@ -9,13 +9,17 @@
   margin-bottom: 40px;
 }
 
+.navbar .logo {
+  text-decoration: none;
+}
+
 .navbar .logo h1 {
   font-size: 24px;
   font-weight: 500;
   color: var(--text-color);
 }
 
-.navbar .logo h1 span {
+.navbar .logo h1:hover {
   color: var(--primary-color);
 }
 
@@ -27,18 +31,42 @@
 }
 
 .navbar .links .link {
-  padding: 10px;
+  width: fit-content;
 
-  color: var(--text-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  position: relative;
+
   text-decoration: none;
-
-  transition: 0.5s;
-}
-
-.navbar .links .link span {
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 
 .navbar .links .link:hover {
-  color: var(--primary-color3);
+  color: var(--primary-color2);
+
+  animation-name: linkSelected;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes linkSelected {
+  from {
+    top: 0px;
+    left: 0px;
+  }
+
+  to {
+    top: 5px;
+    left: 5px;
+
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.25);
+
+    box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.75);
+  }
 }
