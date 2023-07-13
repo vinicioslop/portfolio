@@ -6,7 +6,7 @@ export default function Skills({ data }) {
             <div className={style.title}>{data.title}</div>
             <hr />
             <ul className={style.items}>
-                {data.skills.map(skill => <li className={style.item}>{skill}</li>)}
+                {data.skills.map(skill => <li key={skill} className={style.item}>{skill}</li>)}
             </ul>
         </div>
     )
