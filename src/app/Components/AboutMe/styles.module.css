@@ -1,7 +1,113 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     width: 100%;
+}
+
+.container .aboutme_content {
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+    width: 100%;
+}
+
+.container .aboutme_content .content {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+}
+
+.container .aboutme_content .content p {
+    margin-bottom: 18px;
+
+    font-size: 14px;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.container .aboutme_content .link {
+    margin-top: 10px;
+
+    width: fit-content;
+    height: fit-content;
+
+    text-decoration: none;
+}
+
+.container .aboutme_content .link button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    height: fit-content;
+    width: fit-content;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+
+    cursor: pointer;
+
+    animation-name: linkNotSelected;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes linkNotSelected {
+    from {
+        top: 5px;
+        left: 5px;
+
+        box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    to {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.container .aboutme_content .link button:hover {
+    animation-name: linkSelected;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes linkSelected {
+    from {
+        top: 0px;
+        left: 0px;
+    }
+
+    to {
+        top: 5px;
+        left: 5px;
+
+        box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.75);
+    }
+}
+
+.container .aboutme_content .link button span {
+    color: var(--text-color);
+}
+
+.container .aboutme_content .link button .arrow_right {
+    margin-left: 5px;
+
+    width: 22px;
+    height: 22px;
 }
