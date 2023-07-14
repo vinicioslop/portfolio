@@ -1,4 +1,4 @@
-import briefingStyle from './briefing.module.css';
+import briefingStyle from './styles.module.css';
 
 import Link from 'next/link';
 import Image from 'next/image';

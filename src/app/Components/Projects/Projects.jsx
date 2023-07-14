@@ -1,12 +1,7 @@
-import projectsStyle from './projects.module.css';
+import projectsStyle from './styles.module.css';
 
 import Title from '../Title/Title';
 import ProjectCard from '../ProjectCard/ProjectCard';
-
-import Link from 'next/link';
-import Image from 'next/image';
-
-import arrowRightIcon from '../../../icons/arrow-right.svg';
 
 import buygeHomeImage from '../../../images/projetos/tcc_front/buyge_home.png';
 import socialTreeImage from '../../../images/projetos/social_tree/social_tree_image.png';

@@ -1,4 +1,4 @@
-import projectCardStyle from './projectcard.module.css';
+import projectCardStyle from './styles.module.css';
 
 import Link from 'next/link';
 import Image from 'next/image';

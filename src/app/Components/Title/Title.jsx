@@ -1,4 +1,4 @@
-import titleStyle from './title.module.css';
+import titleStyle from './styles.module.css';
 
 import Link from 'next/link';
 import Image from 'next/image';

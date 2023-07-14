@@ -1,6 +1,6 @@
-import styles from './maincontent.module.css';
+import styles from './styles.module.css';
 
-import Home from '../../pages/Home/Home';
+import Home from '@/app/pages/Home/Home';
 
 export default function MainContent() {
     return (

@@ -1,4 +1,4 @@
-import serviceCardStyle from './servicecard.module.css';
+import serviceCardStyle from './styles.module.css';
 
 import Image from 'next/image';
 import Link from 'next/link';

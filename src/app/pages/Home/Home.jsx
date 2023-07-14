@@ -1,10 +1,11 @@
 import homeStyle from './home.module.css';
 
-import Briefing from '../../Components/Briefing/Briefing';
-import Services from '../../Components/Services/Services';
-import Projects from '../../Components/Projects/Projects';
-import Skills from '../../Components/Skills/Skills';
-import Footer from '../../Components/Footer/Footer';
+import Briefing from '@/app/Components/Briefing/Briefing';
+import Services from '@/app/Components/Services/Services';
+import Projects from '@/app/Components/Projects/Projects';
+import Skills from '@/app/Components/Skills/Skills';
+import AboutMe from '@/app/Components/AboutMe/AboutMe';
+import Footer from '@/app/Components/Footer/Footer';
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <Services />
             <Projects />
             <Skills />
+            <AboutMe />
             <Footer />
         </div>
     )

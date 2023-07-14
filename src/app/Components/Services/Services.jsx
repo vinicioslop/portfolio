@@ -1,4 +1,4 @@
-import servicesStyle from './services.module.css';
+import servicesStyle from './styles.module.css';
 
 import Title from '../Title/Title';
 import ServiceCard from '../ServiceCard/ServiceCard';
