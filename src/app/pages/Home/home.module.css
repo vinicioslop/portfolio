@@ -4,6 +4,9 @@
     align-items: center;
 
     width: 100%;
+
+    padding-left: var(--sides-spacing);
+    padding-right: var(--sides-spacing);
 }
 
 .home_container > * {

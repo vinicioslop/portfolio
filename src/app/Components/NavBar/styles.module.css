@@ -6,6 +6,9 @@
   height: 70px;
   width: 100%;
 
+  padding-left: var(--sides-spacing);
+  padding-right: var(--sides-spacing);
+
   margin-bottom: 40px;
 }
 
