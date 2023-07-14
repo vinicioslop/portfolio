@@ -5,3 +5,7 @@
 
     width: 100%;
 }
+
+.home_container > * {
+    margin-bottom: 30px;
+}

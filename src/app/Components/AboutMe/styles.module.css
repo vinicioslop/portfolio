@@ -24,8 +24,10 @@
     margin-bottom: 18px;
 
     font-size: 14px;
+    font-weight: 300;
+    word-spacing: 5px;
     color: var(--text-color);
-    opacity: 0.8;
+    opacity: 0.95;
 }
 
 .container .aboutme_content .link {
@@ -102,11 +104,12 @@
 }
 
 .container .aboutme_content .link button span {
+    font-size: 12px;
     color: var(--text-color);
 }
 
 .container .aboutme_content .link button .arrow_right {
-    margin-left: 5px;
+    margin-left: 10px;
 
     width: 22px;
     height: 22px;
