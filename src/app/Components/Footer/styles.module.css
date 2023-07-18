@@ -1,4 +1,4 @@
-.footer_container {
+.container {
     display: flex;
     flex-direction: column;
     position: sticky;
@@ -12,7 +12,7 @@
 }
 
 
-.footer_container footer {
+.container footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@
     width: 100%;
 }
 
-.footer_container footer .copyright {
+.container footer .copyright {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,9 +31,11 @@
     font-size: 14px;
     font-weight: 500;
     color: var(--text-color);
+
+    background-color: transparent;
 }
 
-.footer_container footer .copyright span {
+.container footer .copyright span {
     margin-right: 5px;
 
     padding-top: 3px;

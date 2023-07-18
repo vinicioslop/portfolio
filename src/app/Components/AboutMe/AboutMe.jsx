@@ -50,8 +50,8 @@ export default function AboutMe() {
                     <Image
                         className={styles.cover}
                         src={aboutMeCover}
-                        width={500}
-                        height={500}
+                        width="auto"
+                        height="auto"
                         alt="Imagem ilustrativa para skills."
                     />
                 </div>

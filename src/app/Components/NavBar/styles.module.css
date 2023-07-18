@@ -10,6 +10,9 @@
   padding-right: var(--sides-spacing);
 
   margin-bottom: 40px;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .navbar .logo {

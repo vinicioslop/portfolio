@@ -6,7 +6,7 @@ import ProjectCard from '../ProjectCard/ProjectCard';
 import buygeHomeImage from '../../../images/projetos/tcc_front/buyge_home.png';
 import socialTreeImage from '../../../images/projetos/social_tree/social_tree_image.png';
 
-export default function Projects() {
+export default function ProjectsCover() {
     const titleData = {
         title: "Projetos",
         link: "/"

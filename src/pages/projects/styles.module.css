@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    padding-left: var(--sides-spacing);
+    padding-right: var(--sides-spacing);
+}
+
+.container {
+    margin-bottom: 30px;
+}

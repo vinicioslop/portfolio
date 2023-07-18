@@ -1,22 +1,19 @@
-import './globals.css'
-
-import { Merriweather_Sans } from 'next/font/google'
-
-const merriweather_Sans = Merriweather_Sans({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-});
+import './globals.css';
 
 export const metadata = {
   title: 'Vinicius Portfolio',
   description: 'Portfólio de aplicações desenvolvidas por mim, Vinícius Lopes',
 }
 
+import NavBar from '@/app/Components/NavBar/NavBar';
+import Footer from '@/app/Components/Footer/Footer';
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br">
-      <body className={merriweather_Sans.className}>{children}</body>
-    </html>
+    <div className='back'>
+      <NavBar />
+      <main>{children}</main>
+      <Footer />
+    </div>
   )
 }

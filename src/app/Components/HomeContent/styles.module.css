@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    width: 100%;
+  
+    padding-left: var(--sides-spacing);
+    padding-right: var(--sides-spacing);
+  
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .container>* {
+    margin-bottom: 30px;
+  }

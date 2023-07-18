@@ -1,7 +1,0 @@
-.main {
-  display: flex;
-  flex-direction: column;
-
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
