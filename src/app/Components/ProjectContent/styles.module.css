@@ -1,18 +1,60 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     width: 100%;
-    min-height: 100vh;
 
     padding-left: var(--sides-spacing);
     padding-right: var(--sides-spacing);
 
-    background-color: var(--background-color);
     color: var(--text-color);
 }
 
 .container>* {
     margin-bottom: 30px;
+}
+
+.container .title_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 80px;
+
+    width: 100%;
+    height: 60px;
+}
+
+.container .title_desc .title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container .title_desc .description {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .project_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .project_section h3 {
+    margin-bottom: 40px;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container .project_section .project_group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.container .project_section .project_group > * {
+    margin-right: 20px;
 }

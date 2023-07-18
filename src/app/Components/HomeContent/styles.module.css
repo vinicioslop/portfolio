@@ -7,8 +7,7 @@
   
     padding-left: var(--sides-spacing);
     padding-right: var(--sides-spacing);
-  
-    background-color: var(--background-color);
+
     color: var(--text-color);
   }
   
