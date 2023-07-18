@@ -9,18 +9,25 @@
     display: flex;
     flex-direction: column;
 
-    height: fit-content;
     width: 100%;
+    height: 100%;
 }
 
-.container .aboutme_content .content {
+.container .aboutme_content .content_cover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .aboutme_content .content_cover .content {
     display: flex;
     flex-direction: column;
 
-    width: 60%;
+    width: 55%;
 }
 
-.container .aboutme_content .content p {
+.container .aboutme_content .content_cover .content p {
     margin-bottom: 18px;
 
     font-size: 14px;
@@ -28,6 +35,11 @@
     word-spacing: 5px;
     color: var(--text-color);
     opacity: 0.95;
+}
+
+.container .aboutme_content .content_cover .cover {
+    object-fit: scale-down;
+    height: 400px;
 }
 
 .container .aboutme_content .link {
