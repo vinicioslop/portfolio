@@ -29,6 +29,10 @@
     padding: 15px;
 
     border: 1px solid var(--primary-color);
+
+    box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.75);
 }
 
 .container .contact_content .box .title {

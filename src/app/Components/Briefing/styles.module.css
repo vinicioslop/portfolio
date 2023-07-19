@@ -36,6 +36,8 @@
 }
 
 .briefing_container .briefing .contact_button {
+    position: relative;
+
     width: 120px;
     padding: 5px;
 
@@ -53,11 +55,17 @@
 
 @keyframes contactButtonMouseOut {
     from {
-        border-color: var(--primary-color2);
+        top: 5px;
+        left: 5px;
+
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     }
 
     to {
-        border-color: var(--primary-color);
+        top: 0;
+        left: 0;
     }
 }
 
@@ -71,11 +79,17 @@
 
 @keyframes contactButtonMouseOver {
     from {
-        border-color: var(--primary-color);
+        top: 0;
+        left: 0;
     }
 
     to {
-        border-color: var(--primary-color2);
+        top: 5px;
+        left: 5px;
+
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     }
 }
 

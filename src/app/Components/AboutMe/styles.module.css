@@ -43,9 +43,9 @@
 
     border: 10px groove var(--text-color);
 
-    box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .container .aboutme_content .link {
