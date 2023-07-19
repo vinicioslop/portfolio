@@ -16,7 +16,6 @@
 .container .aboutme_content .content_cover {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -40,6 +39,13 @@
 .container .aboutme_content .content_cover .cover {
     object-fit: scale-down;
     height: 460px;
+    width: auto;
+
+    border: 10px groove var(--text-color);
+
+    box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .container .aboutme_content .link {
