@@ -6,7 +6,7 @@ import buygeHomeImage from '@/images/projetos/tcc_front/buyge_home.png';
 import socialTreeImage from '@/images/projetos/social_tree/social_tree_image.png';
 
 export default function ProjectsContent() {
-    const projects = [
+    const completeProjects = [
         {
             projectId: 'buygeFront',
             imageCover: buygeHomeImage,
@@ -16,7 +16,10 @@ export default function ProjectsContent() {
             information: 'Marketplace de venda de produtos do segmento Geek.',
             github: 'https://github.com/vinicioslop/buyge-frontend',
             live: ''
-        },
+        }
+    ];
+
+    const smallProjects = [
         {
             projectId: 'socialTree',
             imageCover: socialTreeImage,
@@ -38,9 +41,15 @@ export default function ProjectsContent() {
                 </p>
             </div>
             <div className={styles.project_section}>
-                <h3>Projetos Completos</h3>
+                <h3>Projetos completos</h3>
                 <div className={styles.project_group}>
-                    {projects.map((project) => <ProjectCard data={project} key={project.projectId} />)}
+                    {completeProjects.map((project) => <ProjectCard data={project} key={project.projectId} />)}
+                </div>
+            </div>
+            <div className={styles.project_section}>
+                <h3>Pequenos projetos</h3>
+                <div className={styles.project_group}>
+                    {smallProjects.map((project) => <ProjectCard data={project} key={project.projectId} />)}
                 </div>
             </div>
         </div>

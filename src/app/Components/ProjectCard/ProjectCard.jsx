@@ -1,45 +1,43 @@
-import projectCardStyle from './styles.module.css';
+import styles from './styles.module.css';
 
-import Link from 'next/link';
-import Image from 'next/image';
+import ImageCover from './ImageCover/ImageCover';
+import ViewButton from './ViewButton/ViewButton';
 
 export default function ProjectCard({ data }) {
     const liveLink = data.live != '' ?
-        <Link href={data.live} target='_blank'>
-            <button>Online</button>
-        </Link>
+        <ViewButton
+            type='online'
+            link={data.live}
+            alt='Ícone do globo terrestre'
+            text='Online'
+        />
         :
-        <button>Online</button>;
+        <></>;
 
     return (
-        <div className={projectCardStyle.project_card}>
-            <div className={projectCardStyle.project_image_container}>
-                <Image
-                    className={projectCardStyle.project_image}
-                    src={data.imageCover}
-                    alt={data.imageAlt}
-                    priority
-                />
-            </div>
-            <hr />
-            <div className={projectCardStyle.project_technologies}>
+        <div className={styles.project_card}>
+            <ImageCover data={data} />
+            <div className={styles.project_technologies}>
                 {data.technologies.map((technology, index) =>
                     <span key={data.projectId + 'Tec' + index}>{technology}</span>
                 )}
             </div>
             <hr />
-            <div className={projectCardStyle.project_description}>
-                <h3 className={projectCardStyle.project_title}>
+            <div className={styles.project_description}>
+                <h3 className={styles.project_title}>
                     {data.title}
                 </h3>
-                <p className={projectCardStyle.project_information}>
+                <p className={styles.project_information}>
                     {data.information}
                 </p>
 
-                <div className={projectCardStyle.button_group}>
-                    <Link href={data.github} target='_blank'>
-                        <button>GitHub</button>
-                    </Link>
+                <div className={styles.button_group}>
+                    <ViewButton
+                        type='github'
+                        link={data.github}
+                        alt='Ícone da logo do GitHub'
+                        text='GitHub'
+                    />
                     {liveLink}
                 </div>
             </div>

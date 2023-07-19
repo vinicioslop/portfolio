@@ -83,12 +83,16 @@
 }
 
 .project_card .project_description .button_group button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
     margin-right: 10px;
 
-    width: 80px;
-    height: 30px;
+    width: 90px;
+    height: 35px;
 
-    color: var(--text-color);
 
     background-color: transparent;
     outline: none;
@@ -97,6 +101,15 @@
     cursor: pointer;
 
     transition: filter 0.4s;
+}
+
+.project_card .project_description .button_group button .icon {
+    width: 22px;
+    height: 22px;
+}
+
+.project_card .project_description .button_group button span {
+    color: var(--text-color);
 }
 
 .project_card .project_description .button_group button:hover {
