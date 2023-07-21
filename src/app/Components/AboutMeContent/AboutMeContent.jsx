@@ -1,6 +1,55 @@
 import styles from './styles.module.css';
 
+import SkillSection from '@/app/Components/SkillSection/SkillSection';
+
 export default function AboutMeContent() {
+    const skillsData = [
+        {
+            title: "Linguagens",
+            skills: [
+                "NodeJS",
+                "JavaScript",
+                "TypeScript",
+                ".NET C#"
+            ]
+        },
+        {
+            title: "Banco de Dados",
+            skills: [
+                "SQLite",
+                "MySQL",
+                "MariaDB"
+            ]
+        },
+        {
+            title: "Outros",
+            skills: [
+                "HTML",
+                "CSS",
+                "REST",
+                "API"
+            ]
+        },
+        {
+            title: "Ferramentas",
+            skills: [
+                "VS Code",
+                "GIT",
+                "GitHub",
+                "Windows",
+                "Linux"
+            ]
+        },
+        {
+            title: "Framework",
+            skills: [
+                "React",
+                "Next.js",
+                "Express"
+            ]
+        }
+    ];
+
     return (
         <div className={styles.container}>
             <div className={styles.title_desc}>
@@ -37,6 +86,31 @@ export default function AboutMeContent() {
                     Especialidades:<br />
                     Prestação de Serviços, Microsserviços, Tecnologia da Informação, Informática, Análise e Desenvolvimento de Sistemas, Desenvolvimento Web, Desenvolvimento para a Internet, Suporte ao Usuário, Suporte Técnico, Front-End, Back-End, Fullstack, HTML, CSS, Javascript, .NET C#, ReactJs, MySQL.
                 </p>
+            </div>
+
+            <div className={styles.skills}>
+                <h3 className={styles.title}>
+                    Skills
+                </h3>
+                <div className={styles.skills_content}>
+                    <div className={styles.group}>
+                        {
+                            skillsData.map(section => <SkillSection key={section.title} data={section} />)
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.fun_facts}>
+                <h3 className={styles.title}>
+                    Fatos sobre mim
+                </h3>
+                <ul className={styles.items}>
+                    <li className={styles.item}>Gosto de praticar <b>programação</b> diariamente</li>
+                    <li className={styles.item}>Gosto de <b>animes</b></li>
+                    <li className={styles.item}>Me exercito de <b>segunda à sábado</b></li>
+                    <li className={styles.item}>Gosto de jogar online</li>
+                </ul>
             </div>
         </div>
     )
