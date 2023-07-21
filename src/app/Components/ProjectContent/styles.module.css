@@ -1,9 +1,4 @@
 .container {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-
     padding-left: var(--sides-spacing);
     padding-right: var(--sides-spacing);
 
@@ -35,13 +30,6 @@
     font-weight: 300;
 }
 
-.container .project_section {
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 50px;
-}
-
 .container .project_section h3 {
     margin-bottom: 20px;
 
@@ -49,14 +37,228 @@
     font-weight: 500;
 }
 
-.container .project_section .project_group {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    width: 100%;
-}
-
 .container .project_section .project_group > * {
     margin-right: 20px;
+}
+
+@media screen and (max-width: 599px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    
+        width: 100%;
+    }
+    
+    .container>* {
+        margin-bottom: 30px;
+    }
+    
+    .container .title_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        margin-bottom: 80px;
+    
+        width: 100%;
+        height: 60px;
+    }
+    
+    .container .project_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        margin-bottom: 50px;
+    }
+    
+    .container .project_section .project_group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 50px;
+    
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    
+        width: 100%;
+    }
+    
+    .container>* {
+        margin-bottom: 30px;
+    }
+    
+    .container .title_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        margin-bottom: 80px;
+    
+        width: 100%;
+        height: 60px;
+    }
+    
+    .container .project_section {
+        display: flex;
+        flex-direction: column;
+    
+        margin-bottom: 50px;
+    }
+    
+    .container .project_section .project_group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin-bottom: 50px;
+    
+        width: 100%;
+    }
+    
+    .container .project_section .project_group > * {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    
+        width: 100%;
+    }
+    
+    .container>* {
+        margin-bottom: 30px;
+    }
+    
+    .container .title_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        margin-bottom: 80px;
+    
+        width: 100%;
+        height: 60px;
+    }
+    
+    .container .project_section {
+        display: flex;
+        flex-direction: column;
+    
+        margin-bottom: 50px;
+    }
+    
+    .container .project_section .project_group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin-bottom: 50px;
+    
+        width: 100%;
+    }
+    
+    .container .project_section .project_group > * {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    
+        width: 100%;
+    }
+    
+    .container>* {
+        margin-bottom: 30px;
+    }
+    
+    .container .title_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        margin-bottom: 80px;
+    
+        width: 100%;
+        height: 60px;
+    }
+    
+    .container .project_section {
+        display: flex;
+        flex-direction: column;
+    
+        margin-bottom: 50px;
+    }
+    
+    .container .project_section .project_group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin-bottom: 50px;
+    
+        width: 100%;
+    }
+    
+    .container .project_section .project_group > * {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    
+        width: 100%;
+    }
+    
+    .container>* {
+        margin-bottom: 30px;
+    }
+    
+    .container .title_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        margin-bottom: 80px;
+    
+        width: 100%;
+        height: 60px;
+    }
+    
+    .container .project_section {
+        display: flex;
+        flex-direction: column;
+    
+        margin-bottom: 50px;
+    }
+    
+    .container .project_section .project_group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin-bottom: 50px;
+    
+        width: 100%;
+    }
+    
+    .container .project_section .project_group > * {
+        margin-right: 20px;
+    }
 }

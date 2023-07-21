@@ -1,29 +1,8 @@
 .container {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    min-height: 100vh;
-
     padding-left: var(--sides-spacing);
     padding-right: var(--sides-spacing);
 
     color: var(--text-color);
-}
-
-.container>* {
-    margin-bottom: 50px;
-}
-
-.title_desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    margin-bottom: 40px;
-
-    width: 100%;
-    height: 60px;
 }
 
 .title_desc .title {
@@ -36,13 +15,6 @@
     font-weight: 300;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-
-    width: 55%;
-}
-
 .content p {
     margin-bottom: 18px;
 
@@ -53,34 +25,10 @@
     opacity: 0.95;
 }
 
-.skills {
-    display: flex;
-    flex-direction: column;
-}
-
 .skills .title {
     margin-bottom: 30px;
 
     font-size: 20px;
-}
-
-.skills .skills_content {
-    display: flex;
-    flex-direction: column;
-}
-
-.skills .skills_content .group {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    width: 100%;
-}
-
-.fun_facts {
-    display: flex;
-    flex-direction: column;
 }
 
 .fun_facts .title {
@@ -90,20 +38,374 @@
 }
 
 .fun_facts .items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
     list-style: none;
 }
 
 .fun_facts .items .item {
-    margin-right: 10px;
-
     padding: 5px;
 
     border: 1px solid var(--primary-color);
 
     font-size: 14px;
     font-weight: 300;
+}
+
+@media screen and (max-width: 599px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .container>* {
+        margin-bottom: 50px;
+    }
+
+    .title_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 40px;
+
+        width: 100%;
+        height: 60px;
+
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        text-align: justify;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .title {
+        text-align: center;
+    }
+
+    .skills .skills_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skills_content .group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    .skills .skills_content .group>* {
+        margin-bottom: 20px;
+    }
+
+    .fun_facts {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .fun_facts .title {
+        text-align: center;
+    }
+
+    .fun_facts .items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 100%;
+    }
+
+    .fun_facts .items .item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .container>* {
+        margin-bottom: 50px;
+    }
+
+    .title_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin-bottom: 40px;
+
+        width: 100%;
+        height: 60px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        width: 55%;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skills_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skills_content .group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .skills .skills_content .group>* {
+        margin-bottom: 20px;
+    }
+
+    .fun_facts {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .fun_facts .items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 100%;
+    }
+
+    .fun_facts .items .item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .container>* {
+        margin-bottom: 50px;
+    }
+
+    .title_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin-bottom: 40px;
+
+        width: 100%;
+        height: 60px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        width: 55%;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skills_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skills_content .group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .skills .skills_content .group>* {
+        margin-bottom: 20px;
+    }
+
+    .fun_facts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fun_facts .items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .fun_facts .items .item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .container>* {
+        margin-bottom: 50px;
+    }
+
+    .title_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin-bottom: 40px;
+
+        width: 100%;
+        height: 60px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        width: 55%;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skills_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skills_content .group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .fun_facts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fun_facts .items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .fun_facts .items .item {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .container>* {
+        margin-bottom: 50px;
+    }
+
+    .title_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin-bottom: 40px;
+
+        width: 100%;
+        height: 60px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        width: 55%;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skills_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skills_content .group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .fun_facts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fun_facts .items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .fun_facts .items .item {
+        margin-right: 10px;
+    }
 }
