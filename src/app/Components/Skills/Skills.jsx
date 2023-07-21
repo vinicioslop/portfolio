@@ -6,7 +6,7 @@ import SkillSection from "../SkillSection/SkillSection";
 export default function Skills() {
     const titleData = {
         title: "Skills",
-        link: "/"
+        link: "/about-me"
     }
 
     const firstSection = [
@@ -67,7 +67,7 @@ export default function Skills() {
 
     return (
         <div className={styles.container}>
-            <Title titleData={titleData} />
+            <Title titleData={titleData} more={false}/>
             <div className={styles.skills_group}>
                 <div className={styles.group}>
                     {

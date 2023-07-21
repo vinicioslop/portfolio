@@ -39,7 +39,7 @@ export default function Services() {
 
     return (
         <div className={servicesStyle.services_container}>
-            <Title titleData={titleData} />
+            <Title titleData={titleData} more={false}/>
 
             <div className={servicesStyle.services_group}>
                 {services.map(service => <ServiceCard key={service.serviceId} serviceInformation={service} />)}

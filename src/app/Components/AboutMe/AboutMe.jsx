@@ -11,12 +11,12 @@ import Title from "../Title/Title";
 export default function AboutMe() {
     const titleData = {
         title: "Sobre Mim",
-        link: "/"
+        link: "/about-me"
     }
 
     return (
         <div className={styles.container}>
-            <Title titleData={titleData} />
+            <Title titleData={titleData} more={true}/>
             <div className={styles.aboutme_content}>
                 <div className={styles.content_cover}>
                     <div className={styles.content}>

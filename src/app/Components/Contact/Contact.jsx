@@ -11,12 +11,12 @@ import treeIcon from '@/icons/tree.svg';
 export default function Contact() {
     const titleData = {
         title: "Contato",
-        link: "/"
+        link: "/contacts"
     }
 
     return (
         <div className={styles.container}>
-            <Title titleData={titleData} />
+            <Title titleData={titleData} more={false} />
             <div className={styles.contact_content}>
                 <div className={styles.text}>
                     Estou interessado em oportunidades em desenvolvimento, tanto front quanto back, além de serviços de manutenção em computadores e notebooks. Caso queira entrar em contato comigo, ou tirar dúvidas só chamar. ✌️

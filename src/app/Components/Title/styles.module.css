@@ -6,14 +6,22 @@
 
     width: 100%;
     height: 100px;
+
+    --line-margin: 10px;
 }
 
 .title_container .title {
+    width: fit-content;
+
+    word-wrap: normal;
+    white-space: nowrap;
     font-size: 22px;
 }
 
 .title_container .line_container {
-    width: 80%;
+    margin-left: var(--line-margin);
+
+    width: 100%;
 }
 
 .title_container .line_container hr {
@@ -24,11 +32,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 
     position: relative;
 
-    font-size: 14px;
-    color: var(--text-color);
+    width: fit-content;
+
+    margin-left: var(--line-margin);
+
     text-decoration: none;
 
     animation-name: linkMouseOut;
@@ -62,6 +73,17 @@
     }
 }
 
-.title_container .link span {
-    margin-right: 2px;
+.title_container .link .icon {
+    object-fit: scale-down;
+
+    height: 20px;
+    width: auto;
+}
+
+.title_container .link .content {
+    width: 80px;
+
+    font-size: 14px;
+    color: var(--text-color);
+    text-align: center;
 }

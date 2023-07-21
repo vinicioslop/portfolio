@@ -1,23 +1,28 @@
-import titleStyle from './styles.module.css';
+import styles from './styles.module.css';
 
 import Link from 'next/link';
 import Image from 'next/image';
 
 import arrowRightIcon from '../../../icons/arrow-right.svg';
 
-export default function Title({ titleData }) {
+export default function Title({ titleData, more }) {
+    const seeMore = more ?
+        <Link className={styles.link} href={titleData.link}>
+            <span className={styles.content}>Veja todos</span>
+            <Image className={styles.icon} src={arrowRightIcon} height='auto' width='auto' alt='Ícone de seta para direita' />
+        </Link>
+        : <></>;
+
     return (
-        <div className={titleStyle.title_container}>
-            <h2 className={titleStyle.title}>
+        <div className={styles.title_container}>
+            <h2 className={styles.title}>
                 {titleData.title}
             </h2>
-            <div className={titleStyle.line_container}>
+            <div className={styles.line_container}>
                 <hr />
             </div>
-            <Link className={titleStyle.link} href={titleData.link}>
-                <span className={titleStyle.content}>Veja todos</span>
-                <Image src={arrowRightIcon} height={20} width={20} alt='Ícone de seta para direita' />
-            </Link>
+            
+            {seeMore}
         </div>
     )
 }

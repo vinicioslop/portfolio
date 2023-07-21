@@ -9,7 +9,7 @@ import socialTreeImage from '../../../images/projetos/social_tree/social_tree_im
 export default function ProjectsCover() {
     const titleData = {
         title: "Projetos",
-        link: "/"
+        link: "/projects"
     }
 
     const projects = [
@@ -37,7 +37,7 @@ export default function ProjectsCover() {
 
     return (
         <div className={projectsStyle.projects_container}>
-            <Title titleData={titleData} />
+            <Title titleData={titleData} more={true}/>
 
             <div className={projectsStyle.project_group}>
                 {projects.map((project) => <ProjectCard data={project} key={project.projectId} />)}

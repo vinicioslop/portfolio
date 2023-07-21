@@ -20,9 +20,6 @@ export default function NavBar() {
                 <Link className={navbarStyle.link} href="/about-me">
                     <p>Sobre Mim</p>
                 </Link>
-                <Link className={navbarStyle.link} href="/">
-                    <p>Contato</p>
-                </Link>
             </div>
         </div>
     )

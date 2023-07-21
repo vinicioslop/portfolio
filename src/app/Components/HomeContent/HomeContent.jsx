@@ -13,8 +13,8 @@ export default function HomeContent() {
       <Briefing />
       <Services />
       <ProjectsCover />
-      <Skills />
       <AboutMe />
+      <Skills />
       <Contact />
     </div>
   )
