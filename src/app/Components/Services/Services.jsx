@@ -32,8 +32,8 @@ export default function Services() {
             serviceId: 'webDevelopment',
             serviceImage: webDevelopmentImage,
             serviceImageAlt: 'Foto de <a href="https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fotis Fotopoulos</a> na <a href="https://unsplash.com/pt-br/fotografias/DuHKoV44prg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
-            serviceTitle: 'Orçamento para melhorias de sistemas',
-            serviceDescription: 'Realizo a análise e orçamento de possíveis melhorias para sistemas, computador de mesa ou laptop, além de orçamento para montagem de computadores completos.'
+            serviceTitle: 'Desenvolvimento de Sites e Aplicativos',
+            serviceDescription: 'Realizo o desenvolvimento de sites e aplicações para os mais diversos objetivos, como: pessoais, vitrine de empresas, blogs entre outros.'
         }
     ];
 
