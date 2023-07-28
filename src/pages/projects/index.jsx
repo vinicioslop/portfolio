@@ -4,7 +4,7 @@ import ProjectsContent from '@/app/Components/ProjectContent/ProjectContent';
 
 export default function ProjectsPage() {
     const metadata = {
-        title: 'Vinicius Portfolio / Projetos',
+        title: 'Portfolio / Projetos',
         description: 'Portfólio de aplicações desenvolvidas por mim, Vinícius Lopes',
     }
 

@@ -1,4 +1,7 @@
 .container {
+    margin: 0;
+    margin-top: 60px;
+
     background-color: var(--primary-color);
 }
 
@@ -27,9 +30,6 @@
 
         width: 100%;
         height: 50px;
-
-        margin: 0;
-        margin-top: 100px;
     }
 
 
@@ -62,9 +62,6 @@
         position: sticky;
 
         width: 100%;
-
-        margin: 0;
-        margin-top: 100px;
     }
 
 
@@ -93,9 +90,6 @@
         position: sticky;
 
         width: 100%;
-
-        margin: 0;
-        margin-top: 100px;
     }
 
 
@@ -124,9 +118,6 @@
         position: sticky;
 
         width: 100%;
-
-        margin: 0;
-        margin-top: 100px;
     }
 
 
@@ -155,9 +146,6 @@
         position: sticky;
 
         width: 100%;
-
-        margin: 0;
-        margin-top: 100px;
     }
 
 

@@ -1,9 +1,10 @@
 import RootLayout from '@/app/layout';
+
 import HomeContent from '@/app/Components/HomeContent/HomeContent';
 
 export default function HomePage() {
   const metadata = {
-    title: 'Vinicius Portfolio / Home',
+    title: 'Portfolio / Home',
     description: 'Portfólio de aplicações desenvolvidas por mim, Vinícius Lopes',
   }
 

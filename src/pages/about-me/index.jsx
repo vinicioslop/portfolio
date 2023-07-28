@@ -4,7 +4,7 @@ import AboutMeContent from '@/app/Components/AboutMeContent/AboutMeContent';
 
 export default function AboutMePage() {
     const metadata = {
-        title: 'Vinicius Portfolio / Sobre Mim',
+        title: 'Portfolio / Sobre Mim',
         description: 'Portfólio de aplicações desenvolvidas por mim, Vinícius Lopes',
     }
 
