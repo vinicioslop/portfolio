@@ -102,6 +102,7 @@
 
     padding-top: 10px;
     padding-bottom: 10px;
+
     padding-left: var(--sides-spacing);
     padding-right: var(--sides-spacing);
   }
@@ -134,9 +135,11 @@
     align-items: center;
     justify-content: space-evenly;
 
-    height: 100px;
+    height: 120px;
     width: 100%;
 
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: var(--sides-spacing);
     padding-right: var(--sides-spacing);
   }
@@ -153,6 +156,9 @@
   .navbar .links .link {
     margin-left: 20px;
     margin-right: 20px;
+
+    width: fit-content;
+    height: fit-content;
 
     text-align: center;
   }

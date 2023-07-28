@@ -10,7 +10,7 @@ export default function ViewButton({ type, link, alt, text }) {
     const icon = type === 'github' ? githubIcon : globeIcon;
 
     return (
-        <Link href={link} target='_blank'>
+        <Link className={styles.link} href={link} target='_blank'>
             <button>
                 <Image className={styles.icon} src={icon} width='auto' height='auto' alt={alt} />
                 <span>{text}</span>

@@ -83,7 +83,11 @@
 
 }
 
-.project_card .project_description .button_group button {
+.project_card .project_description .button_group .link {
+    text-decoration: none;
+}
+
+.project_card .project_description .button_group .link button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -104,15 +108,15 @@
     transition: filter 0.4s;
 }
 
-.project_card .project_description .button_group button .icon {
+.project_card .project_description .button_group .link button .icon {
     width: 22px;
     height: 22px;
 }
 
-.project_card .project_description .button_group button span {
+.project_card .project_description .button_group .link button span {
     color: var(--text-color);
 }
 
-.project_card .project_description .button_group button:hover {
+.project_card .project_description .button_group .link button:hover {
     filter: brightness(0.7);
 }

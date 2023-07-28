@@ -64,6 +64,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    text-decoration: none;
 }
 
 .service_card .service_description_container .link button {

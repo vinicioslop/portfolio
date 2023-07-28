@@ -1,23 +1,23 @@
-import navbarStyle from './styles.module.css';
+import styles from './styles.module.css';
 
 import Link from 'next/link';
 
 export default function NavBar() {
     return (
-        <div className={navbarStyle.navbar}>
-            <Link className={navbarStyle.logo} href="/">
+        <div className={styles.navbar}>
+            <Link className={styles.logo} href="/">
                 <h1>
                     vinicioslop
                 </h1>
             </Link>
-            <div className={navbarStyle.links}>
-                <Link className={navbarStyle.link} href="/">
+            <div className={styles.links}>
+                <Link className={styles.link} href="/">
                     <p>Home</p>
                 </Link>
-                <Link className={navbarStyle.link} href="/projects">
+                <Link className={styles.link} href="/projects">
                     <p>Projetos</p>
                 </Link>
-                <Link className={navbarStyle.link} href="/about-me">
+                <Link className={styles.link} href="/about-me">
                     <p>Sobre Mim</p>
                 </Link>
             </div>
