@@ -1,8 +1,11 @@
 # Portfolio
-Repositório para versionamento do projeto de Portfolio seguindo de base o desafio proposto no Discover da Rocketseat.
+Repositório para versionamento do projeto de Portfolio com projetos pessoais desenvolvidos por mim.
+
+## Aparência Atual
+![Captura de tela do projeto portfolio desenvolvido até o atual momento](public/portfolio_image.png)
 
 ## Status do Projeto
-Em pausa
+Em Desenvolvimento
 
 ## Link para acesso
-https://portfolio-tau-vert-28.vercel.app
+https://portfolio.vinicioslop.com.br
