@@ -1,36 +1,35 @@
+import React, { useState, useEffect } from 'react';
+
 import styles from './styles.module.css';
 
 import ProjectCard from '@/app/Components/ProjectCard/ProjectCard';
 
-import buygeHomeImage from '@/images/projetos/tcc_front/buyge_home.png';
-import socialTreeImage from '@/images/projetos/social_tree/social_tree_image.png';
-
 export default function ProjectsContent() {
-    const completeProjects = [
-        {
-            projectId: 'buygeFront',
-            imageCover: buygeHomeImage,
-            imageAlt: 'Exemplo de tela inicial do projeto Buyge',
-            technologies: ['HTML', 'CSS', 'JavaScript'],
-            title: 'Buyge Frontend',
-            information: 'Marketplace de venda de produtos do segmento Geek.',
-            github: 'https://github.com/vinicioslop/buyge-frontend',
-            live: ''
+    const apiUrl = "https://portfolioapi.vinicioslop.com.br/api";
+    const fetchOptions = {
+        method: 'GET',
+        mode: 'cors',
+        headers: {
+            'Content-Type': 'application/json'
         }
-    ];
+    };
+    const [projects, setProjects] = useState([]);
 
-    const smallProjects = [
-        {
-            projectId: 'socialTree',
-            imageCover: socialTreeImage,
-            imageAlt: 'Exemplo de tela inicial do projeto Social Tree',
-            technologies: ['Next.js', 'ReactJs', 'HTML', 'CSS', 'JavaScript'],
-            title: 'Social Tree',
-            information: 'Projeto inspitado no Linktree, aplicação onde é possível divulgar links de acesso a redes sociais e contato pessoal.',
-            github: 'https://github.com/vinicioslop/social-tree',
-            live: 'https://social.vinicioslop.com.br'
+    useEffect(() => {
+        async function fetchProjects() {
+            try {
+                const response = await fetch(`${apiUrl}/projects`, fetchOptions);
+                const data = await response.json();
+                setProjects(data);
+            } catch (error) {
+                console.error('Error fetching projects:', error);
+            }
         }
-    ];
+        fetchProjects();
+    }, []);
+
+    const completeProjects = projects.filter(project => project.projectType == "complete-project");
+    const smallProjects = projects.filter(project => project.projectType == "small-project");
 
     return (
         <div className={styles.container}>
@@ -43,13 +42,13 @@ export default function ProjectsContent() {
             <div className={styles.project_section}>
                 <h3>Projetos completos</h3>
                 <div className={styles.project_group}>
-                    {completeProjects.map((project) => <ProjectCard data={project} key={project.projectId} />)}
+                    {completeProjects.map((project) => <ProjectCard data={project} key={project._id} />)}
                 </div>
             </div>
             <div className={styles.project_section}>
                 <h3>Pequenos projetos</h3>
                 <div className={styles.project_group}>
-                    {smallProjects.map((project) => <ProjectCard data={project} key={project.projectId} />)}
+                    {smallProjects.map((project) => <ProjectCard data={project} key={project._id} />)}
                 </div>
             </div>
         </div>
