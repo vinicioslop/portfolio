@@ -11,11 +11,8 @@ export default function RootLayout({ children, metadata }) {
       <Head>
         <title>{metadata.title}</title>
       </Head>
-
       <NavBar />
-
       <main>{children}</main>
-
       <Footer />
     </div>
   )

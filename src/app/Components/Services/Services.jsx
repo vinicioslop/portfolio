@@ -11,7 +11,8 @@ export default function Services() {
         link: "/"
     }
 
-    const apiUrl = "https://portfolioapi.vinicioslop.com.br/api";
+    const apiUrl = process.env.API_URL ?? "http://localhost:3000/api";
+
     const fetchOptions = {
         method: 'GET',
         mode: 'cors',

@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 import ProjectCard from '@/app/Components/ProjectCard/ProjectCard';
 
 export default function ProjectsContent() {
-    const apiUrl = "https://portfolioapi.vinicioslop.com.br/api";
+    const apiUrl = process.env.API_URL ?? "http://localhost:3000/api";
     const fetchOptions = {
         method: 'GET',
         mode: 'cors',
