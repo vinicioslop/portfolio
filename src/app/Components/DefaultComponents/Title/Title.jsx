@@ -1,9 +1,9 @@
-import styles from './styles.module.css';
-
 import Link from 'next/link';
 import Image from 'next/image';
 
-import arrowRightIcon from '../../../icons/arrow-right.svg';
+import styles from './styles.module.css';
+
+import arrowRightIcon from '@/icons/arrow-right.svg';
 
 export default function Title({ titleData, more }) {
     const seeMore = more ?

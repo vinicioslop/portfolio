@@ -151,7 +151,7 @@
 
     .briefing_container .working_on .working_image_background .working_image {
         object-fit: scale-down;
-        height: auto;
+        height: 100%;
         width: 100%;
     }
 
@@ -213,7 +213,7 @@
 
     .briefing_container .working_on .working_image_background .working_image {
         object-fit: scale-down;
-        height: auto;
+        height: 100%;
         width: 100%;
     }
 
@@ -275,7 +275,7 @@
 
     .briefing_container .working_on .working_image_background .working_image {
         object-fit: scale-down;
-        height: auto;
+        height: 100%;
         width: 100%;
     }
 
@@ -335,7 +335,7 @@
 
     .briefing_container .working_on .working_image_background .working_image {
         object-fit: scale-down;
-        height: auto;
+        height: 90%;
         width: 90%;
     }
 
@@ -395,7 +395,7 @@
 
     .briefing_container .working_on .working_image_background .working_image {
         object-fit: scale-down;
-        height: auto;
+        height: 90%;
         width: 90%;
     }
 

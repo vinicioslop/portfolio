@@ -1,11 +1,24 @@
-import styles from './styles.module.css';
+import React from 'react';
 
 import Link from 'next/link';
 import Image from 'next/image';
 
-import portfolioImage from '../../../images/projetos/portfolio/portfolio_home.png';
+import styles from './styles.module.css';
 
-export default function Home() {
+export default function BriefingCover() {
+    const workingProject = {
+        id: 2,
+        name: "Portfólio",
+        description: "Projeto de Portfolio para disponibilizar outros projetos desenvolvidos po mim.",
+        technologies: ["Next.js", "React", "HTML", "CSS", "JavaScript"],
+        imageUrl: "https://i.pinimg.com/564x/4e/24/e8/4e24e8534d875d5c92ca2fb589c23f44.jpg",
+        imageAlt: "Exemplo de tela inicial do projeto Portfolio",
+        githubUrl: "https://github.com/vinicioslop/portfolio",
+        liveUrl: "https://portfolio.vinicioslop.com.br",
+        projectType: "complete-project",
+        working: true
+    };
+
     return (
         <div className={styles.briefing_container}>
             <div className={styles.briefing}>
@@ -25,15 +38,17 @@ export default function Home() {
             <div className={styles.working_on}>
                 <div className={styles.working_image_background}>
                     <Image
+                        width={600}
+                        height={600}
                         className={styles.working_image}
-                        src={portfolioImage}
-                        alt='Imagem de exemplo do Projeto do Portfolio'
+                        src={workingProject.imageUrl}
+                        alt={workingProject.imageAlt}
                         priority
                     />
                 </div>
                 <p className={styles.working_description}>
                     <span className={styles.working_color}></span>
-                    Atualmente trabalhando no <span className={styles.working_enfasis}>Portfólio</span>
+                    Atualmente trabalhando no <span className={styles.working_enfasis}>{workingProject.name}</span>
                 </p>
             </div>
         </div>

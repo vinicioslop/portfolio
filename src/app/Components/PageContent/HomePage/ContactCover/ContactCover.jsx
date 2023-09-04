@@ -1,14 +1,13 @@
-import styles from "./styles.module.css";
-
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Title from "../Title/Title";
+import styles from "./styles.module.css";
+import Title from "@/app/Components/DefaultComponents/Title/Title";
 
 import emailIcon from '@/icons/email.svg';
 import treeIcon from '@/icons/tree.svg';
 
-export default function Contact() {
+export default function ContactCover() {
     const titleData = {
         title: "Contato",
         link: "/contacts"

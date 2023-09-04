@@ -1,6 +1,6 @@
 import styles from './styles.module.css';
 
-import SkillSection from '@/app/Components/SkillSection/SkillSection';
+import SkillSection from '@/app/Components/HomePage/Skills/SkillSection/SkillSection';
 
 export default function AboutMeContent() {
     const skillsData = [

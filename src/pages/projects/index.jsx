@@ -1,6 +1,6 @@
 import RootLayout from '@/app/layout';
 
-import ProjectsContent from '@/app/Components/ProjectContent/ProjectContent';
+import ProjectContent from '@/app/Components/PageContent/ProjectContent/ProjectContent';
 
 export default function ProjectsPage() {
     const metadata = {
@@ -11,7 +11,7 @@ export default function ProjectsPage() {
     return (
         <>
             <RootLayout metadata={metadata}>
-                <ProjectsContent />
+                <ProjectContent />
             </RootLayout>
         </>
     )

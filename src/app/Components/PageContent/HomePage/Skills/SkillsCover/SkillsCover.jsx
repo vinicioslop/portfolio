@@ -1,9 +1,9 @@
 import styles from "./styles.module.css";
 
-import Title from "../Title/Title";
+import Title from "@/app/Components/DefaultComponents/Title/Title";
 import SkillSection from "../SkillSection/SkillSection";
 
-export default function Skills() {
+export default function SkillsCover() {
     const titleData = {
         title: "Skills",
         link: "/about-me"

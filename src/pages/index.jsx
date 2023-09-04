@@ -1,6 +1,6 @@
 import RootLayout from '@/app/layout';
 
-import HomeContent from '@/app/Components/HomeContent/HomeContent';
+import HomeContent from '@/app/Components/PageContent/HomeContent/HomeContent';
 
 export default function HomePage() {
   const metadata = {

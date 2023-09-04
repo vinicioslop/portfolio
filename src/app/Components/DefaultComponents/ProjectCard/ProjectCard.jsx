@@ -19,7 +19,7 @@ export default function ProjectCard({ data }) {
             <ImageCover data={data} />
             <div className={styles.project_technologies}>
                 {data.technologies.map((technology, index) =>
-                    <span key={data._id + 'Tec' + index}>{technology}</span>
+                    <span key={data.id + 'Tec' + index}>{technology}</span>
                 )}
             </div>
             <hr />

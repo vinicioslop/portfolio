@@ -1,14 +1,14 @@
+import Link from "next/link";
+import Image from "next/image";
+
 import styles from "./styles.module.css";
 
 import aboutMeCover from '@/images/aboutme/aboutme.jpg';
 import arrowRightDashed from '@/icons/arrow-right-dashed.svg';
 
-import Link from "next/link";
-import Image from "next/image";
+import Title from "@/app/Components/DefaultComponents/Title/Title";
 
-import Title from "../Title/Title";
-
-export default function AboutMe() {
+export default function AboutMeCover() {
     const titleData = {
         title: "Sobre Mim",
         link: "/about-me"
