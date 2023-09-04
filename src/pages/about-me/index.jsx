@@ -1,6 +1,6 @@
 import RootLayout from '@/app/layout';
 
-import AboutMeContent from '@/app/Components/AboutMeContent/AboutMeContent';
+import AboutMeContent from '@/app/Components/PageContent/AboutMeContent/AboutMeContent';
 
 export default function AboutMePage() {
     const metadata = {
